@@ -10,7 +10,7 @@ const Canvas = () => {
   const startDrawing = (e) => {
     const { offsetX, offsetY } = e.nativeEvent;
     const context = canvasRef.current.getContext('2d');
-    context.strokeStyle = 'red'; // Set the drawing line color to red
+    context.strokeStyle = 'red';
     context.beginPath();
     context.moveTo(offsetX, offsetY);
     setIsDrawing(true);
@@ -37,7 +37,7 @@ const Canvas = () => {
     const offsetX = clientX - boundingRect.left;
     const offsetY = clientY - boundingRect.top;
     const context = canvasRef.current.getContext('2d');
-    context.strokeStyle = 'red'; // Set the drawing line color to red
+    context.strokeStyle = 'red';
     context.beginPath();
     context.moveTo(offsetX, offsetY);
     setIsDrawing(true);
